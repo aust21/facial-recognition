@@ -1,1 +1,49 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore virtual environment directories
 venv/
+env/
+.virtualenv/
+
+# Ignore Jupyter notebook metadata
+*.ipynb-*
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore data files
+*.csv
+*.tsv
+*.json
+*.xml
+*.h5
+*.sqlite
+*.db
+
+# Ignore any hidden files or folders
+.DS_Store
+Thumbs.db
+
+# Ignore environment variables or config files
+.env
+.envrc
+*.secret
+
+# Ignore logs and outputs
+*.log
+*.out
+
+# Ignore generated plot images
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+
+# Ignore temporary or backup files
+*.bak
+*.swp
+*.tmp
+
