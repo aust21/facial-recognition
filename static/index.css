@@ -1,0 +1,48 @@
+body {
+  background-color: #d9d2e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  margin: 5px;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.button:hover {
+  background-color: #45a049;
+}
+
+.center {
+  text-align: center;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+#recording,
+#overlay {
+  display: block;
+  background-color: #679b8e;
+  width: 500px;
+  height: 400px;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#recording.started,
+#overlay.started {
+  background-color: transparent;
+}

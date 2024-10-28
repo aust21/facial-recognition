@@ -1,4 +1,3 @@
-
 # Facial Recognition
 
 ## Overview
@@ -10,28 +9,41 @@ This project implements a facial recognition system using Python and OpenCV. The
 - Real-time face detection and recognition
 - Support for multiple faces
 - Easy integration with camera
-    
-## Installation
-Prerequisites
-- Python 3.x
-- OpenCV
-- NumPy
 
-## Installing Dependencies
-```bash
+## Installation
+
+1. Create a virtual environment
+
+For Windows
+
+```
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+For Linux / mac
+
+```
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-## Usage
-Running the Application
+2. Run the web app or the notebook
 
-To run the facial recognition application, use the following command:
+### Notebook
+```
+jupyter nbconvert --to notebook --execute main.ipynb
+```
+- press q to quit
+
+### Web app
 
 ```
-python3 facial_recognition.py
+python3 app.py
 ```
+- Then visit http://localhost:5000/
 
 ## Acknowledgements
 

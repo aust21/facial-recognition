@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='index.css')}}"
+    />
+    <title>Video Recorder</title>
+  </head>
+  <body>
+    <h1 class="center">Get your face detected!</h1>
+    <div class="right">
+      <div class="center-container">
+        <video id="recording"></video>
+        <canvas id="overlay"></canvas>
+      </div>
+      <div id="startButton" class="button">Start Recording</div>
+      <div id="stopButton" class="button" style="display: none">
+        Stop Recording
+      </div>
+      <a id="downloadButton" class="button" style="display: none">Download</a>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>
